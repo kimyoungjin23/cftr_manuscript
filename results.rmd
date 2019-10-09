@@ -1,0 +1,83 @@
+---
+title: "results"
+author: "YJK"
+date: "9/20/2019"
+output: 
+  html_document: default
+  word_document:
+      reference_docx: docx_template.docx
+bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+introduction
+==============================================================
+#screen ASO 
+
+results 
+=================
+In the canontical model of NMD, if one EJC is downstream of a premature termination codn(dEJC) is sufficient for enhancing NMD. There are potentially three sites. In order to assess the impact of individual dEJC on NMD of cftr-W1282X mRNA, we generated CFTR minigenes with one dEJC site. 
+  
+  - more detailed description of the minigene design
+    - mention the splice sites were enhanced in order to separate effect of ASOs on splicing during the ASO screening process.
+    - full one, with WT sequence. 
+  - demonstrate they are targeted for NMD. 
+  - ![*image: u2os pYK6 CHX and siUPF1 mRNA and protein*](u2os6_NMD_confirm.png)
+  - ![(*image: u2os pYK9 CHX and siUPF1 mRNA and protein*)](u2os9_NMD_confirm.png)
+  - ![(*image: u2os pYK10 CHX and siUPF1 mRNA and protein*)](u2os10_NMD_confirm.png)
+  
+FOr ASO screening, we designed 15mer MOE ASOs with P=S modification and 5'me-C. For each dEJC site, we designed 19 ASOs. As control ASO, we initially used HBB/MECP2 ASOs. But we can also use scramble ASOs (planned experiment for paper).
+  - ![image: screening u2os pYK6](screening1.png)
+  - ![image: screening u2os pYK7](screening2.png)
+  - ![image: screening u2os pYK8](screening3.png)
+```{r, include = FALSE}
+source("C:/Users/kimyo/Dropbox/CSHL/r/cftr_manuscript/src/minigene_rt-pcr_qpcr_data_analysis.R")
+```
+  
+Out of the many, the lead ASO for each dEJC can increase minigene expression in a dose-dependent manner. 
+  - ![image: dose-escalation u2os pYK6](u2os_dr1.png)
+  - ![image: dose-escalation u2os pYK7](u2os_dr2.png)
+  - ![image: dose-escalation u2os pYK8](u2os_dr3.png)
+These also increased the minigene protein levels
+  - ![image: u2os pYK6 protein validation](u2os_wb1.png)
+  - ![image: u2os pYK7 protein validation](u2os_wb2.png)
+  - ![image: u2os pYK8 protein validation](u2os_wb3.png)
+These ASOs increase the mRNA without affecting NMD substrate SC35 (##not sure if this should be included?)
+
+#validate this ASO? 
+Next, we tested whether these lead ASOs can be used for inhibiting endogenous CFTR-W1282X mRNA. We generated DLD1 colon cancer cell line which harbor harbor homozygous W1282X in the endogenous CFTR loci with CRISPR/Cas9. We also obtained 16HBE14o- human brochial airway cells with homozygous CFTR-W1282X mutation through cystic fibrosis foundation's resource sharing program (check MTA) (cell line reference). In both types of cells, cycloheximide inhibited NMD and increased the CFTR-W1282X mRNA about 3 fold. 
+
+1. Initially try cocktail from the aso screening
+2. Combination screening for each ASO
+3. This NMD inhibition needs all EJC targeting
+  - different combinations (qpcr)
+  - dose response (qpcr)
+  - also in df508 cells, the ASOs don't have any effect (check exactly what data). 
+  - (supplement) Also test these in the DLD1 w1282x cells
+    - In the wt dld1 cells, the ASOs have no effect
+
+#dependence on NMD, EJC components (no experimental data): 
+siRNA against eIF4A3, Magoh, Y14, UPF1, SMG6, UPF2 +/- ASO?
+
+#exon components? double gRNA exon skipping + ASO
+If you don't have an ASO binding site, does the ASO combination requirement change? 
+
+#effect of the ASOs on the mRNFA transport (no experimental data)?
+nuclear fraction vs cytoplasmic fraction
+- NT vs. CHX vs. ASO vs. siUPF1
+
+#effect of the ASOs on the endogenous NMD transcripts
+- Identification of endogenous NMD transcripts
+- Test ASO's effect on the endogenous NMD transcripts
+
+#functional changes
+- ASO cocktail's effect on CFTR-mediated chloride current 
+  - on dF508 ()
+
+```{r}
+
+```
+

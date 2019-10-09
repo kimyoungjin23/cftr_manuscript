@@ -1,0 +1,13 @@
+---
+title: "cftr_manuscript"
+author: "YJK"
+date: "9/20/2019"
+output: html_document
+bibliography: library.bib 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
